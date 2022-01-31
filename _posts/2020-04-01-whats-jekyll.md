@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's Jekyll?
+title: "What's Jekyll?"
 categories: jekyll
 ---
 

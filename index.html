@@ -22,6 +22,10 @@ title: Hlavní stránka
     <span class="post-date">{{ datum }}</span>
 
     {{ post.excerpt }}
+
+    <a href="{{ post.url | absolute_url }}">
+      Celý příspěvek >>
+    </a>
   </div>
   {% endfor %}
 </div>
