@@ -6,7 +6,6 @@ url: https://dialektika.cz
 baseurl: ""
 paginate: 5
 permalink: pretty
-excerpt_separator: "<!-- more -->"
 
 # About/contact
 author:
