@@ -16,7 +16,6 @@ layout: default
   {{ content }}
 </div>
 
-<!--
 {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Související příspěvky</h2>
@@ -41,7 +40,6 @@ layout: default
   </ul>
 </div>
 {% endif %}
--->
 
 <div class="related_posts">
 
@@ -90,6 +88,7 @@ layout: default
     {% endif %}
 
     {% endfor %}
+
     {% if maxRelatedCounter = 0 %}
     <li>zatím jsme nic souvisejícího neuveřejnili</li>
     {% endif %}
