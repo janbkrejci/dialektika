@@ -232,7 +232,7 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle:active,
-#xsidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
   background-color: #555;

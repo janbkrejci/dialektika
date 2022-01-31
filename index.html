@@ -5,6 +5,13 @@ title: Hlavní stránka
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% capture i18n_date %}
+  {% assign day = post.date | date: "%-d" %}
+  {% assign m = post.date | date: "%-m" | minus: 1 %}
+  {% assign month = site.months[m] %}
+  {% assign year = post.date | date: "%Y" %}
+  {% assign datum = day | append: ". " | append: month | append: " " | append: year %}
+  {% endcapture %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url | absolute_url }}">
@@ -12,7 +19,7 @@ title: Hlavní stránka
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ datum }}</span>
 
     {{ post.content }}
   </div>
