@@ -22,15 +22,15 @@ version: 1.1.0
 google_analytics_id: _#UA-XXXX-Y
 
 months:
-  - ledna
+  - "ledna"
   - "února"
   - "března"
-  - dubna
+  - "dubna"
   - "května"
   - "června"
   - "července"
-  - srpna
+  - "srpna"
   - "září"
   - "října"
-  - listopadu
-  - prosince
+  - "listopadu"
+  - "prosince"
