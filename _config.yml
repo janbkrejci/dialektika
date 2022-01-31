@@ -4,7 +4,7 @@ tagline: ""
 description: Opravdová moudrost je v poznání vlastní nedokonalosti &mdash; Sókratés
 url: https://dialektika.cz
 baseurl: ""
-paginate: 1
+paginate: 5
 permalink: pretty
 
 # About/contact
