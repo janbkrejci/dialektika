@@ -16,6 +16,7 @@ layout: default
   {{ content }}
 </div>
 
+<!--
 {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Související příspěvky</h2>
@@ -40,40 +41,57 @@ layout: default
   </ul>
 </div>
 {% endif %}
+-->
 
-<div class="relatedPosts">
+<div class="related_posts">
 
-  <h4>Související příspěvky</h4>
+  <h2>Související příspěvky</h2>
 
   {% assign maxRelated = 3 %}
   {% assign minCommonTags = 1 %}
   {% assign maxRelatedCounter = 0 %}
 
-  {% for post in site.posts %}
+  <ul class="related-posts">
+    {% for post in site.posts %}
 
-  {% assign sameTagCount = 0 %}
-  {% assign commonTags = '' %}
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
 
-  {% for category in post.categories %}
-  {% if post.url != page.url %}
-  {% if page.categories contains category %}
-  {% assign sameTagCount = sameTagCount | plus: 1 %}
-  {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-  {% assign commonTags = commonTags | append: tagmarkup %}
-  {% endif %}
-  {% endif %}
-  {% endfor %}
+    {% for category in post.categories %}
+    {% if post.url != page.url %}
+    {% if page.categories contains category %}
+    {% assign sameTagCount = sameTagCount | plus: 1 %}
+    {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+    {% assign commonTags = commonTags | append: tagmarkup %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 
-  {% if sameTagCount >= minCommonTags %}
-  <div>
-    <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
-  </div>
-  {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-  {% if maxRelatedCounter >= maxRelated %}
-  {% break %}
-  {% endif %}
-  {% endif %}
+    {% if sameTagCount >= minCommonTags %}
 
-  {% endfor %}
+    {% capture i18n_date %}
+    {% assign day = post.date | date: "%-d" %}
+    {% assign m = post.date | date: "%-m" | minus: 1 %}
+    {% assign month = site.months[m] %}
+    {% assign year = post.date | date: "%Y" %}
+    {% assign datum = day | append: ". " | append: month | append: " " | append: year %}
+    {% endcapture %}
+    <li>
+      <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+          <small>{{ datum }}</small>
+        </a>
+      </h3>
+    </li>
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+    {% break %}
+    {% endif %}
+    {% endif %}
 
+    {% endfor %}
+    {% if maxRelatedCounter = 0 %}
+    <li>zatím jsme nic souvisejícího neuveřejnili</li>
+    {% endif %}
+  </ul>
 </div>
