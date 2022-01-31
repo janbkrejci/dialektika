@@ -23,9 +23,11 @@ title: Hlavní stránka
 
     {{ post.excerpt }}
 
-    <a href="{{ post.url | absolute_url }}">
-      Celý příspěvek >>
-    </a>
+    <small>
+      <a href="{{ post.url | absolute_url }}">
+        celý příspěvek
+      </a>
+    </small>
   </div>
   {% endfor %}
 </div>
