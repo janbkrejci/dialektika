@@ -17,7 +17,6 @@
         return;
 
       checkbox.checked = false;
-      e.target.blur();
     },
     false
   );
