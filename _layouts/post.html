@@ -20,7 +20,8 @@ layout: default
   <h3>Zdroje použité v tomto příspěvku</h3>
   <ul class="related-posts">
     {% for source in page.sources %}
-    <li>{{ source }}</li>
+    <li markdown="0">{{ source }}</li>
+    <br>
     {% endfor %}
   </ul>
   {% endif %}
