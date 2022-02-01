@@ -15,15 +15,13 @@ layout: default
   <span class="post-date">{{ datum }}</span>
   {{ content }}
   <h4>Děkujeme, že nás čtete!</h4>
+  {% if page.sources %}
   <hr>
   <h3>Zdroje použité v tomto příspěvku</h3>
   <ul class="related-posts">
-    {% if page.sources %}
     {% for source in page.sources %}
     <li>{{ source }}</li>
     {% endfor %}
-    {% else %}
-    <li>žádné</li>
-    {% endif %}
   </ul>
+  {% endif %}
 </div>
