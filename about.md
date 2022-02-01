@@ -45,6 +45,8 @@ title: O nás
 - Když se budete snažit, tak nás jistě najdete, ale na sociálních sítích to nebude.
 - Proč tu není diskuse? protože ta má probíhat ve skutečném světě a ne tady.
 
-#### Zdroje použité v tomto příspěvku
+---
+
+### Zdroje použité v tomto příspěvku
 
 Wikipedie: Otevřená encyklopedie: Dialektika [online]. 2021 [citováno 30. 01. 2022]. Dostupný online: <https://cs.wikipedia.org/w/index.php?title=Dialektika&oldid=20561687>
