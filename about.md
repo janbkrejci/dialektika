@@ -51,4 +51,4 @@ title: O nás
 
 Zdroje použité v tomto příspěvku:
 
-Wikipedie: Otevřená encyklopedie: Dialektika [online]. 2021 [citováno 30. 01. 2022]. Dostupný online: <https://cs.wikipedia.org/w/index.php?title=Dialektika&oldid=20561687>
+Wikipedie: Otevřená encyklopedie: Dialektika [online]. 2021 [citováno 30. 01. 2022]. Dostupný online: <a target="_blank" href="https://cs.wikipedia.org/w/index.php?title=Dialektika&oldid=20561687">https://cs.wikipedia.org/w/index.php?title=Dialektika&oldid=20561687</a>
