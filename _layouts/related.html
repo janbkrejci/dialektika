@@ -24,52 +24,60 @@
 {% endif %}
 
 
+<div class="related">
 
-<ul class="related-posts">
-    {% for post in site.posts %}
+    <h2>Související příspěvky</h2>
 
-    {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
+    {% assign maxRelated = 3 %}
+    {% assign minCommonTags = 1 %}
+    {% assign maxRelatedCounter = 0 %}
 
-    {% for category in post.categories %}
-    {% if post.url != page.url %}
-    {% if page.categories contains category %}
-    {% assign sameTagCount = sameTagCount | plus: 1 %}
-    {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-    {% assign commonTags = commonTags | append: tagmarkup %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+    <ul class="related-posts">
+        {% for post in site.posts %}
 
-    {% if sameTagCount >= minCommonTags %}
+        {% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
 
-    {% capture i18n_date %}
-    {% assign day = post.date | date: "%-d" %}
-    {% assign m = post.date | date: "%-m" | minus: 1 %}
-    {% assign month = site.months[m] %}
-    {% assign year = post.date | date: "%Y" %}
-    {% assign datum = day | append: ". " | append: month | append: " " | append: year %}
-    {% endcapture %}
-    <li>
-        <h3>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-                <small>{{ datum }}</small>
-            </a>
-        </h3>
-    </li>
-    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-    {% if maxRelatedCounter >= maxRelated %}
-    {% break %}
-    {% endif %}
-    {% endif %}
+        {% for category in post.categories %}
+        {% if post.url != page.url %}
+        {% if page.categories contains category %}
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+        {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+        {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
 
-    {% endfor %}
+        {% if sameTagCount >= minCommonTags %}
 
-    {% if maxRelatedCounter = 0 %}
-    <li>
-        <small>
-            Zatím žádné...
-        </small>
-    </li>
-    {% endif %}
-</ul>
+        {% capture i18n_date %}
+        {% assign day = post.date | date: "%-d" %}
+        {% assign m = post.date | date: "%-m" | minus: 1 %}
+        {% assign month = site.months[m] %}
+        {% assign year = post.date | date: "%Y" %}
+        {% assign datum = day | append: ". " | append: month | append: " " | append: year %}
+        {% endcapture %}
+        <li>
+            <h3>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+                    <small>{{ datum }}</small>
+                </a>
+            </h3>
+        </li>
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+        {% endif %}
+        {% endif %}
+
+        {% endfor %}
+
+        {% if maxRelatedCounter = 0 %}
+        <li>
+            <small>
+                Zatím žádné...
+            </small>
+        </li>
+        {% endif %}
+    </ul>
+</div>
