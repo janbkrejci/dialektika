@@ -45,6 +45,8 @@ title: O nás
 - Když se budete snažit, tak nás jistě najdete, ale na sociálních sítích to nebude.
 - Proč tu není diskuse? protože ta má probíhat ve skutečném světě a ne tady.
 
+#### Děkujeme, že nás čtete!
+
 ---
 
 ### Zdroje použité v tomto příspěvku
