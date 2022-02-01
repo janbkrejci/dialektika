@@ -18,12 +18,9 @@ layout: default
   {% if page.sources %}
   <hr>
   <h3>Zdroje použité v tomto příspěvku:</h3>
-  <br>
-  <ul class="related-posts">
-    {% for source in page.sources %}
-    <li markdown="1">{{ source }}</li>
-    <br>
-    {% endfor %}
+  {% for source in page.sources %}
+  <p>{{ source }}</p>
+  {% endfor %}
   </ul>
   {% endif %}
 </div>
