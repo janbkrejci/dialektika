@@ -14,10 +14,10 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ datum }}</span>
   {{ content }}
-  <h4>Děkujeme, že nás čtete!</h4>
+  <em><strong>Děkujeme, že nás čtete!</strong></em>
   {% if page.sources %}
   <hr>
-  <h4>Zdroje použité v tomto příspěvku:</h4>
+  <p><strong>Zdroje použité v tomto příspěvku:</strong></p>
   {% for source in page.sources %}
   <p>{{ source }}</p>
   {% endfor %}
