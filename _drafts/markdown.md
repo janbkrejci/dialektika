@@ -22,9 +22,6 @@ https://www.root.cz
 
 ```
 > citát
-> víceřádkový
 ```
 
 > citát
-> víceřádkový
-
