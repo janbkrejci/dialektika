@@ -20,9 +20,8 @@ https://www.root.cz
 
 *kurzíva* **tučné** ***obojí***
 
-`> citát
-> víceřádkový
-`
+`> citát`
+`> víceřádkový`
 
 > citát
 > víceřádkový
