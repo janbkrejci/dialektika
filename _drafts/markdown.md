@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Example content"
+title: "Tahák markdown"
 categories: jekyll
 ---
 
@@ -16,12 +16,14 @@ https://www.root.cz
 
 <a target="_blank" href="">takto</a>
 
-`*kurzíva* **tučné** ***obojí***`
+`*kurzíva* **tučné** ***obojí*** nebo _kurzíva_`
 
-*kurzíva* **tučné** ***obojí***
+*kurzíva* **tučné** ***obojí*** nebo _kurzíva_
 
 ```
 > citát
 ```
 
 > citát
+
+`<del>test</del>` <del>test</del>
