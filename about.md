@@ -22,12 +22,13 @@ title: O nás
 
 # Jak je to tu s autorskými právy?
 
+- Všechny zde zveřejňované informace pocházejí z volně dostupných zdrojů a pokud jsou výsledkem cizí práce, tak jsou řádně citovány.
 - Se vším, co tu najdete, můžete volně nakládat podle svého uvážení. Přemýšlejte, bavte se, podělte se s přáteli, diskutujte s nimi, zanadávejte si na nás, žádná omezení tu nejsou.
 - Pokud nás budete někde citovat, tak prosíme takto: „Převzato z webu dialektika.cz“.
 
 # Jak je to tu s ochranou osobních údajů?
 
-- Jako vážně? No dobrá, když to musí být. Tady žádné osobní údaje nejsou, nic se tu nesbírá ani neuchovává, všechny zveřejňované informace pocházejí z volně dostupných zdrojů a pokud jsou výsledkem cizí práce, tak jsou řádně citovány.
+- Jako vážně? No dobrá, když to musí být. Tady žádné osobní údaje nejsou.
 - Nesbíráme žádná data o návštěvách a návštěvnících tohoto webu, jen anonymně počítáme zobrazení jednotlivých příspěvků, abychom viděli, jestli je někdo četl.
 
 # Proč to děláme?
