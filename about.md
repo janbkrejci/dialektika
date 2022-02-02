@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: O nás
 ---
 
