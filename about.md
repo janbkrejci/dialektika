@@ -39,7 +39,7 @@ title: O nás
 
 # Kdo jsme?
 
-- Jarka Krejčí a Honza Krejčí, 30 let manželé, rodiče dvou dospělých dětí, občané a obyvatelé České republiky.
+- Jarka Krejčí a Honza Krejčí, manželé od roku 1992, rodiče dvou dospělých dětí, občané a obyvatelé České republiky.
 
 # Jak se s námi můžete spojit?
 
